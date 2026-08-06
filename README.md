@@ -1,4 +1,4 @@
-## Artificial Cognitive Intelligence
+# Artificial Cognitive Intelligence
 # PART 1: Project Overview & Logo Philosophy
 
 Here is the in-depth design and description for the **Artificial-Cognitive-Brain** project, ranging from its logo philosophy to its technical system architecture.
