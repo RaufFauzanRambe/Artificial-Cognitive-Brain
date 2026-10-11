@@ -1,0 +1,26 @@
+# optimizer_demo.acb — shows off the optimizer's constant folding
+
+let x = 2 + 3 * 4          # folded to 14
+let y = 10 - 5 - 5         # folded to 0
+let z = (1 + 2) * (3 + 4)  # folded to 21
+let w = 100 * 0            # algebraic simplification -> 0
+let v = x * 1              # algebraic simplification -> x
+let b = true and false     # folded to false
+let c = false or x > 0     # simplified to (x > 0)
+
+print x
+print y
+print z
+print w
+print v
+print b
+print c
+
+# Dead code after return — eliminated
+def early_return(n):
+    if n > 0:
+        return 1
+        print "this is dead code"
+    return -1
+
+print early_return(5)

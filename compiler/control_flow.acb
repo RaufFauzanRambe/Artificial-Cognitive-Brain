@@ -1,0 +1,27 @@
+# control_flow.acb — demonstrates if/elif/else, while, for
+
+let x = 10
+if x > 0:
+    print "positive"
+elif x == 0:
+    print "zero"
+else:
+    print "negative"
+
+# While loop with break/continue
+let i = 0
+while i < 10:
+    if i == 5:
+        break
+    if i % 2 == 0:
+        print i
+    i = i + 1
+
+# For loop over a list
+for n in [1, 2, 3, 4, 5]:
+    if n % 2 == 0:
+        print "even:"
+        print n
+    else:
+        print "odd:"
+        print n

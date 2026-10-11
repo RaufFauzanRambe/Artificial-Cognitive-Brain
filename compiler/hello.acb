@@ -1,0 +1,4 @@
+# hello.acb — first ACB program
+let name = "Cognitive Brain"
+print "Hello, " + name + "!"
+print 2 + 3 * 4
